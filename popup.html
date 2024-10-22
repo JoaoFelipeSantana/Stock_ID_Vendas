@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="popup_adicionar_produto">
+        <div class="popup_header">
+            <input type="text" placeholder="Produto">
+            <h1>Categoria</h1>
+            <div class="imagens_categoria">
+
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M45 52.9237L42.045 56.25L15 30L42.045 3.75L45 7.07625L21.3825 30L45 52.9237Z"
+                        fill="#FF9933" />
+                </svg>
+                <img src="assets/image/bebidas.png" alt="categoria bebidas">
+                <img src="assets/image/carnes.png" alt="categoria carnes">
+                <img src="assets/image/limpeza.png" alt="categoria limpeza">
+                <img src="assets/image/padaria.png" alt="categoria padaria">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 7.07625L17.955 3.75L45 30L17.955 56.25L15 52.9238L38.6175 30L15 7.07625Z"
+                        fill="#FF9933" />
+                </svg>
+
+
+
+            </div>
+        </div>
+        <div class="popup_main">
+            <div class="cabecalho_lista">
+                <span class="txtProduto">Produto</span>
+                <span class="txtPreco">Preço</span>
+                <span class="txtContador">Qnt.</span>
+            </div>
+            <div class="lista_produtos">
+                <ul>
+                    <li>
+                        <span class="txtProdto">Água Sanitária</span>
+                        <span class="txtPreco">R$ 6,00</span>
+                        <span class="txtContador">
+                            <div class="contador">
+                                <button class="botao">&#8722;</button>
+                                <div class="valor" id="valor">10</div>
+                                <button class="botao">&#43;</button>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="txtProdto">Água Sanitária</span>
+                        <span class="txtPreco">R$ 6,00</span>
+                        <span class="txtContador">
+                            <div class="contador">
+                                <button class="botao">&#8722;</button>
+                                <div class="valor" id="valor">10</div>
+                                <button class="botao">&#43;</button>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="txtProdto">Água Sanitária</span>
+                        <span class="txtPreco">R$ 6,00</span>
+                        <span class="txtContador">
+                            <div class="contador">
+                                <button class="botao">&#8722;</button>
+                                <div class="valor" id="valor">10</div>
+                                <button class="botao">&#43;</button>
+                            </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="txtProdto">Água Sanitária</span>
+                        <span class="txtPreco">R$ 6,00</span>
+                        <span class="txtContador">
+                            <div class="contador">
+                                <button class="botao">&#8722;</button>
+                                <div class="valor" id="valor">10</div>
+                                <button class="botao">&#43;</button>
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="botoes_finalizar">
+                <button class="botao_cancelar">
+                    <svg fill="currentColor" height="800px" width="800px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 330 330" xml:space="preserve">
+                        <g>
+                            <path d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165c90.982,0,165-74.019,165-165S255.982,0,165,0z M165,300
+        c-74.439,0-135-60.561-135-135S90.561,30,165,30c74.439,0,135,60.561,135,135S239.439,300,165,300z" />
+                            <path d="M239.247,90.754c-5.857-5.858-15.355-5.858-21.213,0l-53.033,53.033l-53.033-53.033c-5.857-5.858-15.355-5.858-21.213,0
+        c-5.858,5.858-5.858,15.355,0,21.213L143.788,165l-53.033,53.033c-5.858,5.858-5.858,15.355,0,21.213
+        c2.929,2.929,6.768,4.394,10.606,4.394c3.839,0,7.678-1.464,10.606-4.394l53.033-53.033l53.033,53.033
+        c2.929,2.929,6.768,4.394,10.606,4.394c3.839,0,7.678-1.464,10.607-4.394c5.858-5.858,5.858-15.355,0-21.213L186.214,165
+        l53.033-53.033C245.105,106.109,245.105,96.612,239.247,90.754z" />
+                        </g>
+                    </svg>
+                    <span>Canelar</span>
+                </button>
+                <button class="botao_finalizar">
+                    <svg width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        fill="none">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M3 10a7 7 0 019.307-6.611 1 1 0 00.658-1.889 9 9 0 105.98 7.501 1 1 0 00-1.988.22A7 7 0 113 10zm14.75-5.338a1 1 0 00-1.5-1.324l-6.435 7.28-3.183-2.593a1 1 0 00-1.264 1.55l3.929 3.2a1 1 0 001.38-.113l7.072-8z" />
+                    </svg>
+                    <span>Finalizar</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
