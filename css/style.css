@@ -553,3 +553,9 @@ span {
     color: var(--cor-laranja-padrao);
     cursor: pointer;
 }
+
+input:focus {
+    outline: none;
+    box-shadow: 1px 1px 5px var(--cor-laranja-sombra);
+    transform: scale(1.01);
+}
