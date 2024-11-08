@@ -353,27 +353,31 @@ span {
 
 .btn_acoes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 5ch;
 }
 
-.btn_excluir_venda, .btn_editar_venda {
-    display: inline;
+.btn_mais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: 5px solid var(--cor-laranja-padrao);
+    background-color: var(--cor-branco-padrao);
+    color: var(--cor-laranja-padrao);
+    padding: 2px;
 }
 
-.btn_excluir_venda:hover {
-    color: red;
-    border-color: red;
-    transform: scale(1.01);
+.btn_mais:hover {
+    color: var(--cor-branco-padrao);
+    background-color: var(--cor-laranja-padrao);
+    border-color: var(--cor-laranja-padrao);
+    transform: scale(1.10);
     transition-duration: 150ms;
-}
-
-.btn_editar_venda:hover {
-    color: yellow;
-    border-color: yellow;
-    transform: scale(1.01);
-    transition-duration: 200ms;
+    box-shadow: 2px 2px 5px var(--cor-laranja-sombra);
 }
 
 .telaProdutos ul {
