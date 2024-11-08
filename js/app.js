@@ -21,6 +21,7 @@ botaoAbrirDesc.addEventListener('click', () => {
     popup_addDesc.style.display = 'block';
 });
 
+
 window.addEventListener('click', (event) => {
     if (event.target === popup_addProd | event.target === popup_addFormPag | event.target === popup_addDesc) {
         popup_addProd.style.display = 'none';

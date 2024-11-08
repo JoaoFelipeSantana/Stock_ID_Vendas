@@ -2,7 +2,7 @@
 
 :root {
     --cor-azul-padrao: #0099DD;
-    --cor-azul-escuro-destaque: #005072;
+    --cor-azul-escuro-destaque: #006894;
     --cor-laranja-padrao: #FF9933;
     --cor-branco-padrao: #ffffff;
     --cor-laranja-sombra: #E07000;
@@ -30,7 +30,7 @@ header {
     align-items: center;
 }
 
-.logo svg{
+.logo svg {
     width: 97px;
     height: 97px;
     color: var(--cor-branco-padrao);
@@ -46,7 +46,8 @@ header {
     font-size: 22px;
 }
 
-.titulo svg, nav svg{
+.titulo svg,
+nav svg {
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -76,7 +77,7 @@ main {
     padding-right: 50px;
 }
 
-.rotulos{
+.rotulos {
     width: 620px;
     padding-left: 33px;
     display: flex;
@@ -87,7 +88,8 @@ main {
     margin-bottom: 5px;
 }
 
-.rotulos, .telaProdutos ul li {
+.rotulos,
+.telaProdutos ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -142,7 +144,9 @@ span {
     margin-right: 10px;
 }
 
-.subtotal, .total_troco, .forma_pagamento {
+.subtotal,
+.total_troco,
+.forma_pagamento {
     margin-bottom: 20px;
 }
 
@@ -152,7 +156,8 @@ span {
     align-items: center;
 }
 
-.tot_recebido, .troco {
+.tot_recebido,
+.troco {
     width: 295px;
 }
 
@@ -175,10 +180,10 @@ span {
     font-weight: bolder;
 }
 
-.labelCaixa{
+.labelCaixa {
     font-size: 20px;
     font-weight: bolder;
-    color:var(--cor-azul-escuro-destaque);
+    color: var(--cor-azul-escuro-destaque);
     margin-bottom: 3px;
 }
 
@@ -201,7 +206,8 @@ button svg {
     height: 40px;
 }
 
-#botao_desc svg , .botao_finalizar svg {
+#botao_desc svg,
+.botao_finalizar svg {
     width: 50px;
     height: 50px;
 }
@@ -221,7 +227,7 @@ button svg {
     border-color: rgb(255, 0, 0);
 }
 
-.botao_cancelar svg { 
+.botao_cancelar svg {
     width: 50px;
     height: 50px;
 }
@@ -277,7 +283,7 @@ button svg {
 }
 
 
-.historicoProdutos .rotulos{
+.historicoProdutos .rotulos {
     width: 85vw;
     padding-left: 33px;
     display: flex;
@@ -288,7 +294,8 @@ button svg {
     margin-bottom: 5px;
 }
 
-.historicoProdutos .rotulos, .listaProdutos ul li {
+.historicoProdutos .rotulos,
+.listaProdutos ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -346,32 +353,26 @@ span {
     text-align: center;
 }
 
-.btn_acoes svg{
-    width: 45px;
-    height: 45px;
+#btn_mais svg {
+    width: 50px;
+    height: 50px;
 }
 
-.btn_acoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5ch;
-}
-
-.btn_mais{
+#btn_mais {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border: 5px solid var(--cor-laranja-padrao);
     background-color: var(--cor-branco-padrao);
     color: var(--cor-laranja-padrao);
     padding: 2px;
+    margin-right: 25px;
 }
 
-.btn_mais:hover {
+#btn_mais:hover {
     color: var(--cor-branco-padrao);
     background-color: var(--cor-laranja-padrao);
     border-color: var(--cor-laranja-padrao);
@@ -384,12 +385,15 @@ span {
     list-style: none;
 }
 
-#popup_addProd, #popup_addFormPag, #popup_addDesc {
+#popup_addProd,
+#popup_addFormPag,
+#popup_addDesc,
+#popup_edicao {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     display: none;
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -434,7 +438,6 @@ span {
     margin-top: 15px;
     margin-bottom: 15px;
     color: var(--cor-branco-padrao);
-
 }
 
 .imagens_categoria img {
@@ -475,9 +478,10 @@ span {
 
 .cabecalho_lista {
     color: var(--cor-branco-padrao);
-    width: 500px;
-    text-indent: 20px;
+    width: 530px;
+    text-indent: 15px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 
 .txtProduto {
@@ -512,7 +516,7 @@ span {
     align-items: center;
 }
 
-.popup_main .botoes_finalizar button{
+.popup_main .botoes_finalizar button {
     margin-top: 10px
 }
 
@@ -579,7 +583,7 @@ input:focus {
     margin-top: 125px;
 }
 
-.botoes_forma_pagamento button{
+.botoes_forma_pagamento button {
     width: 200px;
     height: 65px;
 }
@@ -594,10 +598,11 @@ input:focus {
     margin-top: 30vh;
     padding-top: 15px;
 }
+
 .inputDesc {
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
 }
 
 .inputDesc input {
@@ -615,4 +620,94 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+.edit_delete {
+    background-color: var(--cor-azul-padrao);
+    border: 5px solid var(--cor-laranja-padrao);
+    border-radius: 15px;
+    width: 650px;
+    height: 90vh;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.dois_inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.label_input input {
+    border: 3px solid var(--cor-laranja-padrao);
+    border-radius: 30px;
+    width: 250px;
+    line-height: 35px;
+    text-indent: 20px;
+    font-size: 25px;
+    color: var(--cor-azul-escuro-destaque);
+    font-weight: 600;
+}
+
+.label_input label {
+    color: var(--cor-branco-padrao);
+    text-indent: 10px;
+}
+
+.edit_delete form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nomeCliente {
+    width: 530px;
+}
+
+#valorTotal,
+#codVenda {
+    margin-right: 30px;
+}
+
+.edit_delete h1 {
+    color: var(--cor-branco-padrao);
+    margin-bottom: 20px;
+}
+
+.edit_delete form .lista_produtos {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.botao_editar svg {
+    width: 50px;
+    height: 50px;
+}
+
+.botao_editar {
+    color: #FFCC00;
+    border-color: #FFCC00;
+    font-size: 25px;
+}
+
+.botao_editar:hover {
+    background-color: #FFCC00;
+    color: var(--cor-branco-padrao);
+    transform: scale(1.1);
+    transition-duration: 300ms;
 }
